@@ -93,4 +93,3 @@ toggleMenu.addEventListener('click', () => {
   toggleMenu.classList.toggle('open')
   logo.classList.toggle('mobile')
 })
-
