@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Rubik:wght@400;500&display=swap");
+
+@import "./variables";
+@import "./reset";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./hero";
+@import "./features";
+@import "./download";
+@import "./faq";
+@import "./newsletter";
+@import "./utilities";
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: #f3f3f3;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $soft-blue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $soft-red;
+}

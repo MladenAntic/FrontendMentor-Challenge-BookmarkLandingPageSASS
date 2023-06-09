@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "scss": "gulp sass",
+    "watch": "gulp sass:watch"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}

@@ -1,0 +1,127 @@
+#download {
+  margin-top: 15.625rem;
+  text-align: center;
+
+  @media screen and (max-width: 62rem) {
+    margin-top: 12.5rem;
+  }
+
+  .download__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $very-dark-blue;
+    margin-bottom: 1.875rem;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .download__description {
+    font-size: 1.125rem;
+    color: $grayish-blue;
+    line-height: 1.5;
+    width: 40%;
+    margin: 0 auto 3.125rem;
+
+    @media screen and (max-width: 62rem) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 48rem) {
+      width: 80%;
+      font-size: 1rem;
+    }
+  }
+
+  .download__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+
+    @media screen and (max-width: 62rem) {
+      flex-direction: column;
+    }
+
+    .download__card {
+      padding: 1.25rem 0;
+      border-radius: 0.3125rem;
+
+      -webkit-box-shadow: 0rem 0rem 0.3125rem 0rem rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0rem 0rem 0.3125rem 0rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0rem 0rem 0.3125rem 0rem rgba(0, 0, 0, 0.5);
+
+      h4 {
+        color: $very-dark-blue;
+        margin: 1.875rem 0 0.9375rem;
+      }
+
+      small,
+      .download__dots,
+      .download__btn {
+        display: block;
+      }
+
+      small {
+        margin-bottom: 1.875rem;
+        color: $grayish-blue;
+      }
+
+      .download__dots {
+        margin-bottom: 1.25rem;
+      }
+
+      .download__btn {
+        margin: auto;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        background: $soft-blue;
+        color: #fff;
+        padding: 0.9375rem 2.5rem;
+        border-radius: 0.3125rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background: transparent;
+          color: $soft-blue;
+          outline: 0.125rem solid $soft-blue;
+        }
+      }
+
+      .download__btnFirefox {
+        &:hover {
+          background: transparent;
+          color: #ff9800;
+          outline: 0.125rem solid #ff9800;
+        }
+      }
+
+      .download__btnOpera {
+        &:hover {
+          background: transparent;
+          color: $soft-red;
+          outline: 0.125rem solid $soft-red;
+        }
+      }
+    }
+
+    .download__firefox {
+      margin-top: 4.375rem;
+
+      @media screen and (max-width: 62rem) {
+        margin-top: 0;
+      }
+    }
+
+    .download__opera {
+      margin-top: 8.75rem;
+
+      @media screen and (max-width: 62rem) {
+        margin-top: 0;
+      }
+    }
+  }
+}

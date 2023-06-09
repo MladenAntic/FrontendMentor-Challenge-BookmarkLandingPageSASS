@@ -1,0 +1,233 @@
+#features {
+  margin-top: 9.375rem;
+  text-align: center;
+  position: relative;
+
+  .features__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $very-dark-blue;
+    margin-bottom: 1.25rem;
+
+    @media screen and (max-width: 48rem) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 36rem) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .features__description {
+    font-size: 1.125rem;
+    color: $grayish-blue;
+    line-height: 1.5;
+    width: 37.5%;
+    margin: 0 auto 4.6875rem;
+
+    @media screen and (max-width: 75rem) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 62rem) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 48rem) {
+      width: 80%;
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 36rem) {
+      font-size: 0.875rem;
+    }
+  }
+
+  .features__list {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.25rem;
+    border-bottom: 0.0625rem solid $grayish-blue;
+    margin: 0 auto 6.25rem;
+
+    @media screen and (max-width: 48rem) {
+      gap: 3.125rem;
+    }
+
+    @media screen and (max-width: 36rem) {
+      gap: 1.5625rem;
+    }
+
+    li {
+      font-size: 1.125rem;
+      color: $very-dark-blue;
+      padding-bottom: 1.875rem;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      position: relative;
+
+      @media screen and (max-width: 48rem) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 36rem) {
+        font-size: 0.75rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.3125rem;
+        background: $soft-red;
+        bottom: -2.5%;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        transform-origin: right center;
+      }
+
+      &:hover {
+        color: $soft-red;
+
+        &::after {
+          transform: scaleX(1);
+          transform-origin: left center;
+          transition-duration: 0.4s;
+        }
+      }
+
+      &.features__highlight {
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    justify-content: center;
+    gap: 6.25rem;
+
+    @media screen and (max-width: 62rem) {
+      flex-direction: column;
+      gap: 15.625rem;
+    }
+
+    @media screen and (max-width: 48rem) {
+      flex-direction: column;
+      gap: 10.9375rem;
+    }
+
+    .features__illustration {
+      width: 50%;
+      height: 21.875rem;
+
+      @media screen and (max-width: 62rem) {
+        width: 100%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 48rem) {
+        width: 100%;
+        height: 18.75rem;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 36rem) {
+        height: 17.1875rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .features__content {
+      text-align: left;
+      width: 38.5%;
+
+      @media screen and (max-width: 62rem) {
+        text-align: center;
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: $very-dark-blue;
+
+        @media screen and (max-width: 48rem) {
+          font-size: 1.25rem;
+        }
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: $grayish-blue;
+        line-height: 1.5;
+        margin: 1.875rem 0;
+
+        @media screen and (max-width: 48rem) {
+          font-size: 1rem;
+        }
+      }
+
+      .features__infoBtn {
+        display: inline-block;
+        border: none;
+        outline: none;
+        font-size: 1.125rem;
+        background: $soft-blue;
+        color: #fff;
+        padding: 0.9375rem 1.875rem;
+        border-radius: 0.3125rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        @media screen and (max-width: 48rem) {
+          font-size: 1rem;
+        }
+
+        &:hover {
+          background: transparent;
+          outline: 0.125rem solid $soft-blue;
+          color: $soft-blue;
+        }
+      }
+    }
+  }
+
+  .features__pattern {
+    width: 34.375rem;
+    height: 18.75rem;
+    background: $soft-blue;
+    position: absolute;
+    left: 0;
+    bottom: -15%;
+    z-index: -1;
+    border-bottom-right-radius: 9.375rem;
+
+    @media screen and (max-width: 75rem) {
+      width: 28.125rem;
+      height: 15.625rem;
+    }
+
+    @media screen and (max-width: 62rem) {
+      top: 45%;
+    }
+
+    @media screen and (max-width: 48rem) {
+      width: 31.25rem;
+      height: 17.1875rem;
+      top: 45%;
+    }
+
+    @media screen and (max-width: 36rem) {
+      width: 80%;
+      height: 15.625rem;
+    }
+  }
+}

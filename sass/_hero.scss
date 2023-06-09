@@ -1,0 +1,168 @@
+#hero {
+  margin-top: 6.25rem;
+  position: relative;
+
+  .wrapper {
+    @media screen and (max-width: 62rem) {
+      flex-direction: column-reverse;
+      gap: 6.25rem;
+    }
+
+    .hero__content {
+      text-align: left;
+
+      @media screen and (max-width: 62rem) {
+        text-align: center;
+      }
+
+      .hero__title {
+        font-size: 3rem;
+        color: $very-dark-blue;
+
+        @media screen and (max-width: 75rem) {
+          font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: 48rem) {
+          font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: 36rem) {
+          font-size: 2rem;
+        }
+      }
+
+      .hero__description {
+        margin: 1.875rem 0;
+        color: $grayish-blue;
+        line-height: 1.5;
+        font-size: 1.125rem;
+        width: 85%;
+
+        @media screen and (max-width: 75rem) {
+          font-size: 1rem;
+        }
+
+        @media screen and (max-width: 62rem) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 48rem) {
+          width: 100%;
+          font-size: 1rem;
+        }
+
+        @media screen and (max-width: 36rem) {
+          font-size: 0.875rem;
+        }
+      }
+
+      .hero__btn {
+        display: inline-block;
+        border: none;
+        outline: none;
+        font-size: 1.125rem;
+        font-weight: bold;
+        padding: 0.9375rem 2.5rem;
+        border-radius: 0.3125rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        @media screen and (max-width: 87.5rem) {
+          font-size: 1rem;
+        }
+
+        @media screen and (max-width: 75rem) {
+          font-size: 0.875rem;
+        }
+
+        @media screen and (max-width: 48rem) {
+          font-size: 1rem;
+        }
+      }
+
+      .hero__chrome {
+        background: $soft-blue;
+        color: #fff;
+        margin-right: 0.9375rem;
+
+        @media screen and (max-width: 36rem) {
+          margin-right: 0;
+          margin-bottom: 0.9375rem;
+        }
+
+        &:hover {
+          background: transparent;
+          color: $soft-blue;
+          outline: 0.125rem solid $soft-blue;
+        }
+      }
+
+      .hero__firefox {
+        background: #f3f3f3;
+        color: $very-dark-blue;
+
+        -webkit-box-shadow: 0rem 0rem 0.3125rem 0rem rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0rem 0rem 0.3125rem 0rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0rem 0rem 0.3125rem 0rem rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          background: $soft-red;
+          color: #fff;
+          outline: 0.125rem solid $soft-red;
+        }
+      }
+    }
+
+    .hero__illustration {
+      margin-right: -6.25rem;
+
+      @media screen and (max-width: 87.5rem) {
+        width: 37.5rem;
+      }
+
+      @media screen and (max-width: 75rem) {
+        width: 28.125rem;
+      }
+
+      @media screen and (max-width: 62rem) {
+        width: 100%;
+        margin: auto;
+      }
+    }
+  }
+
+  .hero__pattern {
+    width: 31.25rem;
+    height: 18.75rem;
+    background: $soft-blue;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-bottom-left-radius: 9.375rem;
+
+    @media screen and (max-width: 75rem) {
+      width: 25rem;
+      height: 15.625rem;
+      top: 30%;
+    }
+
+    @media screen and (max-width: 62rem) {
+      top: 22.5%;
+      height: 17.1875rem;
+    }
+
+    @media screen and (max-width: 48rem) {
+      width: 28.125rem;
+      height: 17.1875rem;
+      top: 12.5%;
+    }
+
+    @media screen and (max-width: 36rem) {
+      width: 80%;
+      height: 12.5rem;
+      top: 5%;
+    }
+  }
+}
